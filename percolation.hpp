@@ -5,6 +5,7 @@
 #include <algorithm>
 
 #include "unionfind.hpp"
+#include "utils.hpp"
 
 class BondPercolation{
 public:
@@ -75,12 +76,12 @@ double BondPercolation::percolation_probability()
 double BondPercolation::average_cluster_size()
 {
     std::vector<int> sizes = uf.allSize();
-    long long int moment1 = 0;
-    long long int moment2 = 0;
+    double moment1 = 0;
+    double moment2 = 0;
     for (int s: sizes)
     {
-        moment1 += s;
-        moment2 += s*s;
+        moment1 += static_cast<double>(s) / (L * L);
+        moment2 += static_cast<double>(s * s) / (L * L);
     }
     return static_cast<double>(moment2) / static_cast<double>(moment1);
 }
@@ -93,15 +94,12 @@ int BondPercolation::cluster_number()
 void BondPercolation::mc(int n_loop)
 {
     std::mt19937 mt;
-    double pp = 0.0;
-    double Sp = 0.0;
+    std::vector<double> Sp;
     for (int i=0; i<n_loop; i++)
     {
         one_step(mt);
-        pp += percolation_probability();
-        Sp += average_cluster_size();
+        // pp += percolation_probability();
+        Sp.push_back(average_cluster_size());
     }
-    pp = pp / static_cast<double>(n_loop);
-    Sp = Sp / static_cast<double>(n_loop);
-    std::cout << std::fixed << std::setprecision(15) << p << " " << pp << " " << Sp << std::endl;
+    std::cout << std::fixed << std::setprecision(15) << L << " " << p << " " << mean(Sp) << " " << interval(Sp) << std::endl;
 }
