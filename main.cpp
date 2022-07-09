@@ -4,8 +4,12 @@
 
 int main(int argc, char *argv[])
 {
-    int L = atoi(argv[1]);
-    int n_iter = atoi(argv[2]);
+    // type 0: percolation probability
+    // type 1: average cluster size
+    // type 2: finite average cluster size
+    int type = atoi(argv[1]);
+    int L = atoi(argv[2]);
+    int n_iter = atoi(argv[3]);
 
     double dp = 0.02;
     int n_p = 50;
@@ -13,6 +17,6 @@ int main(int argc, char *argv[])
     {
         double p = dp * i;
         BondPercolation model(L, p);
-        model.mc(n_iter);
+        model.mc(type, n_iter);
     }
 }
