@@ -1,0 +1,12 @@
+./run 0 32 1000 > data/theta32.txt
+./run 0 64 1000 > data/theta64.txt
+./run 0 128 1000 > data/theta128.txt
+./run 0 256 1000 > data/theta256.txt
+./run 1 32 1000 > data/chi32.txt
+./run 1 64 1000 > data/chi64.txt
+./run 1 128 1000 > data/chi128.txt
+./run 1 256 1000 > data/chi256.txt
+./run 2 32 1000 > data/chif32.txt
+./run 2 64 1000 > data/chif64.txt
+./run 2 128 1000 > data/chif128.txt
+./run 2 256 1000 > data/chif256.txt
