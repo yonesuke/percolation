@@ -3,9 +3,20 @@
 
 format: jb-book
 root: index
-chapters:
-- file: critical_phenomena
-- file: critical_exponents
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+parts:
+- caption: What is percolation?
+  chapters:
+  - file: critical_phenomena
+  - file: critical_exponents
+
+# - caption: Theorem and Proofs
+
+- caption: Numerical simulations
+  chapters:
+  - file: finite_size_scaling
+
+- caption: Jupyter Book
+  chapters:
+  - file: markdown
+  - file: notebooks
+  - file: markdown-notebooks
