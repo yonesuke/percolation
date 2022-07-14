@@ -57,7 +57,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Markdown Files" href="markdown.html" />
-    <link rel="prev" title="Introduction to Percolation" href="index.html" />
+    <link rel="prev" title="Critical Phenomena" href="critical_phenomena.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -118,6 +118,11 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="critical_phenomena.html">
+   Critical Phenomena
+  </a>
+ </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Power laws and Critical exponents
@@ -411,10 +416,16 @@ title="Print to PDF"
     \theta(p)=P_{p}(|C|=\infty)
     \]</div>
 </li>
+<li><p>mean cluster size</p>
+<div class="math notranslate nohighlight">
+\[
+    \chi(p)=E_{p}(|C|)
+    \]</div>
+</li>
 <li><p>truncated mean cluster size</p>
 <div class="math notranslate nohighlight">
 \[
-    \chi^{\mathrm{f}}(p)=E_{p}(|C|\mid |C|&lt;\infty)
+    \chi^{\mathrm{f}}(p)=E_{p}(|C|; |C|&lt;\infty)
     \]</div>
 </li>
 <li><p>number of clusters per vertex</p>
@@ -426,7 +437,7 @@ title="Print to PDF"
 <li><p>cluster moments</p>
 <div class="math notranslate nohighlight">
 \[
-    \chi^{\mathrm{f}}_{k}(p)=E_{p}(|C|^{k}\mid |C|&lt;\infty)
+    \chi^{\mathrm{f}}_{k}(p)=E_{p}(|C|^{k}; |C|&lt;\infty)
     \]</div>
 </li>
 <li><p>correlation length</p>
@@ -460,7 +471,7 @@ title="Print to PDF"
     \kappa'''(p)\approx|p-p_{\mathrm{c}}|^{-1-\alpha}
     \]</div>
 </li>
-<li><p><span class="math notranslate nohighlight">\(\Delta\)</span> is deined by</p>
+<li><p><span class="math notranslate nohighlight">\(\Delta\)</span> is defined by</p>
 <div class="math notranslate nohighlight">
 \[
     \frac{\chi^{\mathrm{f}}_{k+1}(p)}{\chi^{\mathrm{f}}_{k}(p)}\approx|p-p_{\mathrm{c}}|^{-\Delta}
@@ -481,6 +492,11 @@ title="Print to PDF"
 <div class="math notranslate nohighlight">
 \[
     P_{p_{\mathrm{c}}}(|C|=n)\approx n^{-1-1/\delta}
+    \]</div>
+<p>Or equivalently,</p>
+<div class="math notranslate nohighlight">
+\[
+    P_{p_{\mathrm{c}}}(|C|\geq n)\approx n^{-1/\delta}
     \]</div>
 </li>
 <li><p><span class="math notranslate nohighlight">\(\rho\)</span> is defined by</p>
@@ -527,11 +543,11 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="critical_phenomena.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Introduction to Percolation</p>
+            <p class="prev-next-title">Critical Phenomena</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="markdown.html" title="next page">
