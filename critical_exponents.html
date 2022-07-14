@@ -433,109 +433,83 @@ title="Print to PDF"
 <h1>Power laws and Critical exponents<a class="headerlink" href="#power-laws-and-critical-exponents" title="Permalink to this headline">#</a></h1>
 <section id="list-of-functions">
 <h2>List of functions<a class="headerlink" href="#list-of-functions" title="Permalink to this headline">#</a></h2>
-<ul>
-<li><p>Percolation probability</p>
-<div class="math notranslate nohighlight">
-\[
-    \theta(p)=P_{p}(|C|=\infty)
-    \]</div>
-</li>
-<li><p>mean cluster size</p>
-<div class="math notranslate nohighlight">
-\[
-    \chi(p)=E_{p}(|C|)
-    \]</div>
-</li>
-<li><p>truncated mean cluster size</p>
-<div class="math notranslate nohighlight">
-\[
-    \chi^{\mathrm{f}}(p)=E_{p}(|C|; |C|&lt;\infty)
-    \]</div>
-</li>
-<li><p>number of clusters per vertex</p>
-<div class="math notranslate nohighlight">
-\[
-    \kappa(p)=E_{p}(|C|^{-1})
-    \]</div>
-</li>
-<li><p>cluster moments</p>
-<div class="math notranslate nohighlight">
-\[
-    \chi^{\mathrm{f}}_{k}(p)=E_{p}(|C|^{k}; |C|&lt;\infty)
-    \]</div>
-</li>
-<li><p>correlation length</p>
-<div class="math notranslate nohighlight">
-\[
-    \xi_{p}
-    \]</div>
-</li>
-</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>property</p></th>
+<th class="head"><p>function</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>percolation probability</p></td>
+<td><p><span class="math notranslate nohighlight">\(\theta(p)=P_{p}(|C|=\infty)\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>mean cluster size</p></td>
+<td><p><span class="math notranslate nohighlight">\(\chi(p)=E_{p}(|C|)\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>truncated mean cluster size</p></td>
+<td><p><span class="math notranslate nohighlight">\(\chi^{\mathrm{f}}(p)=E_{p}(|C|; |C|&lt;\infty)\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>number of clusters per vertex</p></td>
+<td><p><span class="math notranslate nohighlight">\(\kappa(p)=E_{p}(|C|^{-1})\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>cluster moments</p></td>
+<td><p><span class="math notranslate nohighlight">\(\chi^{\mathrm{f}}_{k}(p)=E_{p}(|C|^{k}; |C|&lt;\infty)\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>correlation length</p></td>
+<td><p><span class="math notranslate nohighlight">\(\xi_{p}\)</span></p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="list-of-critical-exponents">
 <h2>List of critical exponents<a class="headerlink" href="#list-of-critical-exponents" title="Permalink to this headline">#</a></h2>
 <section id="near-the-critical-point-p-mathrm-c">
 <h3>Near the critical point <span class="math notranslate nohighlight">\(p_{\mathrm{c}}\)</span><a class="headerlink" href="#near-the-critical-point-p-mathrm-c" title="Permalink to this headline">#</a></h3>
-<ul>
-<li><p><span class="math notranslate nohighlight">\(\beta\)</span> is defined by</p>
-<div class="math notranslate nohighlight">
-\[
-    \theta_{p}\approx(p-p_{\mathrm{c}})^{\beta}
-    \]</div>
-</li>
-<li><p><span class="math notranslate nohighlight">\(\gamma\)</span> is defined by</p>
-<div class="math notranslate nohighlight">
-\[
-    \chi^{\mathrm{f}}(p)\approx|p-p_{\mathrm{c}}|^{-\gamma}
-    \]</div>
-</li>
-<li><p><span class="math notranslate nohighlight">\(\alpha\)</span> is defined by</p>
-<div class="math notranslate nohighlight">
-\[
-    \kappa'''(p)\approx|p-p_{\mathrm{c}}|^{-1-\alpha}
-    \]</div>
-</li>
-<li><p><span class="math notranslate nohighlight">\(\Delta\)</span> is defined by</p>
-<div class="math notranslate nohighlight">
-\[
-    \frac{\chi^{\mathrm{f}}_{k+1}(p)}{\chi^{\mathrm{f}}_{k}(p)}\approx|p-p_{\mathrm{c}}|^{-\Delta}
-    \]</div>
-</li>
-<li><p><span class="math notranslate nohighlight">\(\nu\)</span> is defined by</p>
-<div class="math notranslate nohighlight">
-\[
-    \xi(p)\approx |p-p_{\mathrm{c}}|^{-\nu}
-    \]</div>
-</li>
-</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>critical exponent</p></th>
+<th class="head"><p>behavior</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\beta\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\theta_{p}\approx(p-p_{\mathrm{c}})^{\beta}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\gamma\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\chi^{\mathrm{f}}(p)\approx|p-p_{\mathrm{c}}|^{-\gamma}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\alpha\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\kappa'''(p)\approx|p-p_{\mathrm{c}}|^{-1-\alpha}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\Delta\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\dfrac{\chi^{\mathrm{f}}_{k+1}(p)}{\chi^{\mathrm{f}}_{k}(p)}\approx|p-p_{\mathrm{c}}|^{-\Delta}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\nu\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\xi(p)\approx |p-p_{\mathrm{c}}|^{-\nu}\)</span></p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="on-the-critical-point-p-mathrm-c">
 <h3>On the critical point <span class="math notranslate nohighlight">\(p_{\mathrm{c}}\)</span><a class="headerlink" href="#on-the-critical-point-p-mathrm-c" title="Permalink to this headline">#</a></h3>
-<ul>
-<li><p><span class="math notranslate nohighlight">\(\delta\)</span> is defined by</p>
-<div class="math notranslate nohighlight">
-\[
-    P_{p_{\mathrm{c}}}(|C|=n)\approx n^{-1-1/\delta}
-    \]</div>
-<p>Or equivalently,</p>
-<div class="math notranslate nohighlight">
-\[
-    P_{p_{\mathrm{c}}}(|C|\geq n)\approx n^{-1/\delta}
-    \]</div>
-</li>
-<li><p><span class="math notranslate nohighlight">\(\rho\)</span> is defined by</p>
-<div class="math notranslate nohighlight">
-\[
-    P_{p_{\mathrm{c}}}(\mathrm{rad}(C)=n)\approx n^{-1-1/\rho}
-    \]</div>
-</li>
-<li><p><span class="math notranslate nohighlight">\(\eta\)</span> is defined by</p>
-<div class="math notranslate nohighlight">
-\[
-    P_{p_{\mathrm{c}}}(0\leftrightarrow x)\approx|x|^{2-d-\eta}
-    \]</div>
-</li>
-</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>critical exponent</p></th>
+<th class="head"><p>behavior</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\delta\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(P_{p_{\mathrm{c}}}(|C|=n)\approx n^{-1-1/\delta}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\rho\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(P_{p_{\mathrm{c}}}(\mathrm{rad}(C)=n)\approx n^{-1-1/\rho}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\eta\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(P_{p_{\mathrm{c}}}(0\leftrightarrow x)\approx|x|^{2-d-\eta}\)</span></p></td>
+</tr>
+</tbody>
+</table>
 </section>
 </section>
 </section>
