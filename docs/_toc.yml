@@ -4,6 +4,7 @@
 format: jb-book
 root: index
 chapters:
+- file: critical_phenomena
 - file: critical_exponents
 - file: markdown
 - file: notebooks

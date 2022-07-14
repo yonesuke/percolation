@@ -7,10 +7,16 @@
     \theta(p)=P_{p}(|C|=\infty)
     $$
 
+- mean cluster size
+
+    $$
+    \chi(p)=E_{p}(|C|)
+    $$
+
 - truncated mean cluster size
 
     $$
-    \chi^{\mathrm{f}}(p)=E_{p}(|C|\mid |C|<\infty)
+    \chi^{\mathrm{f}}(p)=E_{p}(|C|; |C|<\infty)
     $$
 
 - number of clusters per vertex
@@ -22,7 +28,7 @@
 - cluster moments
 
     $$
-    \chi^{\mathrm{f}}_{k}(p)=E_{p}(|C|^{k}\mid |C|<\infty)
+    \chi^{\mathrm{f}}_{k}(p)=E_{p}(|C|^{k}; |C|<\infty)
     $$
 
 - correlation length
@@ -52,7 +58,7 @@
     \kappa'''(p)\approx|p-p_{\mathrm{c}}|^{-1-\alpha}
     $$
 
-- $\Delta$ is deined by
+- $\Delta$ is defined by
 
     $$
     \frac{\chi^{\mathrm{f}}_{k+1}(p)}{\chi^{\mathrm{f}}_{k}(p)}\approx|p-p_{\mathrm{c}}|^{-\Delta}
@@ -69,6 +75,12 @@
 
     $$
     P_{p_{\mathrm{c}}}(|C|=n)\approx n^{-1-1/\delta}
+    $$
+
+    Or equivalently,
+    
+    $$
+    P_{p_{\mathrm{c}}}(|C|\geq n)\approx n^{-1/\delta}
     $$
 
 - $\rho$ is defined by
