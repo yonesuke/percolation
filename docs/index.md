@@ -2,12 +2,9 @@
 
 ![](images/2dbond.png)
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+Percolation theory describes the behavior of a network when nodes or links are added. This is a geometric type of phase transition, since at a critical fraction of addition the network of small, disconnected clusters merge into significantly larger connected, so-called spanning cluster.
 
-Check out the content pages bundled with this sample book to see more.
+{cite:t}`Grimmett1999-qx`
 
 ```{tableofcontents}
 ```

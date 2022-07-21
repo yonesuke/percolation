@@ -15,8 +15,7 @@ parts:
   chapters:
   - file: finite_size_scaling
 
-- caption: Jupyter Book
+- caption: References
   chapters:
-  - file: markdown
-  - file: notebooks
-  - file: markdown-notebooks
+  - file: references
+
